@@ -34,19 +34,22 @@
             <ul class="navbar-nav mx-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="{{ route('home') }}">
+                    <a class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}"
+                        href="{{ route('home') }}">
                         Home
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('catalog') }}">
-                       Catalog
+                    <a class="nav-link {{ request()->routeIs('catalog') ? 'active' : '' }}"
+                        href="{{ route('catalog') }}">
+                        Catalog
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('contact') }}">
+                    <a class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }}"
+                        href="{{ route('contact') }}">
                         Contact
                     </a>
                 </li>

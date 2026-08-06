@@ -19,7 +19,7 @@
 
             <div class="mt-4">
 
-                <a href="{{ route('home') }}" class="isb-btn me-3">
+                <a href="{{ route('login') }}" class="isb-btn me-3">
                     <i class="bi bi-box-arrow-in-right me-2"></i>
                     Login
                 </a>

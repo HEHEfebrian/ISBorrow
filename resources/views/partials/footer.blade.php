@@ -34,9 +34,7 @@
 
                     <li><a href="#">Home</a></li>
 
-                    <li><a href="#features">Features</a></li>
-
-                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#features">Catalog</a></li>
 
                     <li><a href="#">Contact</a></li>
 
@@ -56,8 +54,6 @@
                     <li><a href="#">Borrow Hardware</a></li>
 
                     <li><a href="#">Borrow Software</a></li>
-
-                    <li><a href="#">Borrowing Policy</a></li>
 
                     <li><a href="#">FAQ</a></li>
 

@@ -1,15 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-@import "tailwindcss";
-
-/* =======================================================
-   Theme
-======================================================= */
-
-@theme {
-    --font-sans: "Poppins", sans-serif;
-}
-
 :root {
+    --font-sans: "Poppins", sans-serif;
+
     --primary: #183883;
     --primary-hover: #224AA8;
     --primary-dark: #122B63;
@@ -569,6 +560,8 @@ section {
 
     position: relative;
 
+    z-index: 2;
+
     background: white;
 
     border-radius: 24px;
@@ -669,9 +662,13 @@ section {
 
 /* garis penghubung desktop */
 
-@media(min-width:992px) {
+@media (min-width: 992px) {
 
-    .step-card::after {
+    #how-it-works .col-lg-3 {
+        position: relative;
+    }
+
+    #how-it-works .col-lg-3::after {
 
         content: "";
 
@@ -679,22 +676,20 @@ section {
 
         top: 82px;
 
-        right: -50%;
+        left: 60%;
 
-        width: 100%;
+        width: 80%;
 
         height: 2px;
 
         background: #D8E4FF;
 
-        z-index: -1;
+        z-index: 0;
 
     }
 
-    .col-lg-3:last-child .step-card::after {
-
+    #how-it-works .col-lg-3:last-child::after {
         display: none;
-
     }
 
 }
@@ -1627,5 +1622,19 @@ textarea.contact-input {
 .accordion-button:focus {
 
     box-shadow: none;
+
+}
+
+.accordion-body {
+
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    color: #475569 !important;
+    background: white !important;
+
+    position: relative;
+    z-index: 999;
 
 }
