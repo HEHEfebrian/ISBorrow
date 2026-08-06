@@ -27,18 +27,16 @@
 
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarMenu">
+        <div class="navbar-collapse" id="navbarMenu">
 
             <!-- Menu -->
 
             <ul class="navbar-nav mx-auto">
 
                 <li class="nav-item">
-
-                    <a class="nav-link active" href="#">
+                    <a class="nav-link active" href="{{ route('home') }}">
                         Home
                     </a>
-
                 </li>
 
                 <li class="nav-item">
@@ -48,27 +46,9 @@
                 </li>
 
                 <li class="nav-item">
-
-                    <a class="nav-link" href="#features">
-                        Features
-                    </a>
-
-                </li>
-
-                <li class="nav-item">
-
-                    <a class="nav-link" href="#how-it-works">
-                        How It Works
-                    </a>
-
-                </li>
-
-                <li class="nav-item">
-
-                    <a class="nav-link" href="#contact">
+                    <a class="nav-link" href="{{ route('contact') }}">
                         Contact
                     </a>
-
                 </li>
 
             </ul>
@@ -77,7 +57,7 @@
 
             <div class="d-flex">
 
-                <a href="{{ route('home') }}" class="isb-btn">
+                <a href="{{ route('login') }}" class="isb-btn">
 
                     <i class="bi bi-box-arrow-in-right me-2"></i>
 
