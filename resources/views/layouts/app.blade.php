@@ -32,7 +32,10 @@
 <body>
 
     {{-- Navbar --}}
-    @include('partials.navbar')
+    {{-- Hide global navbar on admin routes --}}
+    @unless(request()->routeIs('admin.*'))
+        @include('partials.navbar')
+    @endunless
 
     {{-- Content --}}
     <main>
